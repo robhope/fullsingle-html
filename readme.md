@@ -1,3 +1,5 @@
+# FullSingle HTML Templates
+
 Hey Friend 👋
 
 Thanks for checking out the FullSingle HTML template repository. Each template is based off the _layouts_ in the free [FullSingle WordPress Plugin](https://onepagelove.com/go/fullsingle). 
