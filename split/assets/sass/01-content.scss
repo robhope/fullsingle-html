@@ -55,7 +55,6 @@ body.page-template-page-fullsingle-split {
 	// Global Styles
 	//-------------------------------------------------------------------------------
 
-
 	p {
 		color: $color-text;
 	}
@@ -63,18 +62,17 @@ body.page-template-page-fullsingle-split {
 }
 
 //-------------------------------------------------------------------------------
-// Sections
+// Sections and Columns
 //-------------------------------------------------------------------------------
 
 .fs-split {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
 
 	@media (max-width: $bp-tablet ) {
 		height: auto;
+		flex-wrap: wrap;
 	}	
 
 	//-------------------------------------------------------------------------------
@@ -101,175 +99,172 @@ body.page-template-page-fullsingle-split {
 
 	.split-content {
 		width: 50%;
-		height: 100vh;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+  		overflow: auto;
 
 		@media (max-width: $bp-tablet ) {
 			width: 100%;
 			height: auto;
 		}	
 
-		//-------------------------------------------------------------------------------
-		// Intro Text
-		//-------------------------------------------------------------------------------
-
-		.split-intro {
-			padding: 80px 80px 0 80px;
-			font-weight: 600;
-			font-size: 64px; 
-			line-height: 80px;
-			letter-spacing: -2px;
+		.split-content-vertically-center {
+			padding: 80px;
+			max-width: 640px;
+			margin-top: auto;
+  			margin-bottom: auto;
 
 			@media (max-width: $bp-smallish ) {
-				padding: 60px 60px 0 60px;
-			}	
+				padding: 60px;
+			}
 
 			@media (max-width: $bp-tablet ) {
-				padding: 40px 40px 0 40px;
+				padding: 40px;
 			}	
-
-			p {
-				color: $color-tagline;
-			}
-
-			h1 {
-				font-weight: 400;
-				text-transform: uppercase;
-				font-size: 16px; 
-				line-height: 16px;
-				margin-bottom: 40px;
-				letter-spacing: 0.4px;
-				color: $color-maverick;
-			}
-
+			
 		}
 
-		//-------------------------------------------------------------------------------
-		// Biography
-		//-------------------------------------------------------------------------------
+	}
 
-		.split-bio {
-			padding: 40px 80px 0 80px;
-			font-family: 'Lora', serif;
+}
 
-			@media (max-width: $bp-smallish ) {
-				padding: 40px 60px 0 60px;
-			}
+//-------------------------------------------------------------------------------
+// Content
+//-------------------------------------------------------------------------------
 
-			@media (max-width: $bp-tablet ) {
-				padding: 40px 40px 0 40px;
-			}	
+//-------------------------------------------------------------------------------
+// Intro Text
+//-------------------------------------------------------------------------------
 
-			p {
-				color: $color-text;
-			}
+.split-intro {
+	font-weight: 600;
+	font-size: 64px; 
+	line-height: 80px;
+	letter-spacing: -2px;
 
-			a {
-				color: $color-link;
-				transition-duration: 0.5s;
-				border-bottom: 1px dotted $color-link;
+	h1 {
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 16px; 
+		line-height: 16px;
+		margin-bottom: 40px;
+		letter-spacing: 0.4px;
+		color: $color-maverick;
+	}
 
-				&:hover {
-					color: $color-link-hover;
-					transition-duration: 0.1s;
-					border-bottom: 1px dotted $color-link-hover;
-				}
+	.tagline {
+		color: $color-tagline;
+	}
 
-			}			
+}
 
+//-------------------------------------------------------------------------------
+// Biography
+//-------------------------------------------------------------------------------
+
+.split-bio {
+	padding: 40px 0 40px 0;
+	font-family: 'Lora', serif;
+
+	@media (max-width: $bp-smallish ) {
+		padding: 30px 0;
+	}
+
+	@media (max-width: $bp-tablet ) {
+		padding: 20px 0;
+	}	
+
+	p {
+		color: $color-text;
+	}
+
+	a {
+		color: $color-link;
+		transition-duration: 0.5s;
+		border-bottom: 1px dotted $color-link;
+
+		&:hover {
+			color: $color-link-hover;
+			transition-duration: 0.1s;
+			border-bottom: 1px dotted $color-link-hover;
 		}
 
-		//-------------------------------------------------------------------------------
-		// Lists
-		//-------------------------------------------------------------------------------
+	}			
 
-		.split-lists {
-			padding: 60px 80px 40px 80px;
+}
 
-			@media (max-width: $bp-smallish ) {
-				padding: 40px 60px 40px 60px;
-			}
+//-------------------------------------------------------------------------------
+// Lists
+//-------------------------------------------------------------------------------
 
-			@media (max-width: $bp-tablet ) {
-				padding: 40px 40px 20px 40px;
-			}	
+.split-lists {	
 
-			.split-list {
-				width: 30%;
-				display: inline-block;
-				margin-bottom: 40px;
+	.split-list {
+		width: 30%;
+		display: inline-block;
+		margin-bottom: 40px;
 
-				@media (max-width: $bp-mobile ) {
-					width: 90%;
-				}	
+		@media (max-width: $bp-mobile ) {
+			width: 90%;
+		}	
 
-				h3 {
-					font-weight: 400;
-					text-transform: uppercase;
-					font-size: 11px;
-					line-height: 11px;
-					margin-bottom: 31px;
-					color: $color-text;
-					letter-spacing: 2px;
-					opacity: 0.5;
-				}
+		h3 {
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: 11px;
+			line-height: 11px;
+			margin-bottom: 31px;
+			color: $color-text;
+			letter-spacing: 2px;
+			opacity: 0.5;
+		}
 
-				ul {
-					
+		ul {
+			
 
-					li {
-						font-size: 16px;
-						line-height: 16px;	
-						margin-bottom: 12px;
-						
-						a {
-							color: $color-link;
-							transition-duration: 0.5s;
+			li {
+				font-size: 16px;
+				line-height: 16px;	
+				margin-bottom: 12px;
+				
+				a {
+					color: $color-link;
+					transition-duration: 0.5s;
 
-							&:hover {
-								color: $color-link-hover;
-								transition-duration: 0.1s;
-							}
-
-						}
-						
+					&:hover {
+						color: $color-link-hover;
+						transition-duration: 0.1s;
 					}
 
 				}
-
-			}	
+				
+			}
 
 		}
 
-		//-------------------------------------------------------------------------------
-		// Credit
-		//-------------------------------------------------------------------------------
+	}	
 
-		//	To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split 
-		//	this really helps contribute towards us developing more templates and means the world to me!
-		//	Cheers, Rob (@robhope)
+}
 
-		.split-credit {
-			opacity: 0.4;
-			padding: 0 80px 40px 80px;
+//-------------------------------------------------------------------------------
+// Credit
+//-------------------------------------------------------------------------------
 
-			@media (max-width: $bp-smallish ) {
-				padding: 0 60px 40px 60px;
-			}
+//	To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split 
+//	this really helps contribute towards us developing more templates and means the world to me!
+//	Cheers, Rob (@robhope)
 
-			@media (max-width: $bp-tablet ) {
-				padding: 0 40px 20px 40px;
-			}	
+.split-credit {
+	opacity: 0.4;
 
-			p {
-				font-size: 12px; 
-				line-height: 14px;
+	p {
+		font-size: 12px; 
+		line-height: 14px;
 
-				a { 
-					color: $color-text;
-				}
-
-			}
-
+		a { 
+			color: $color-text;
 		}
 
 	}
