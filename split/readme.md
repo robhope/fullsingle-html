@@ -8,7 +8,7 @@ This HTML template holds a [CC3.0 License](https://creativecommons.org/licenses/
 
 ## Useful links
 - [Split Demo](https://demo.onepagelove.com/fullsingle-html/split)
-- [Remove Split CC3.0 Lincense](https://onepagelove.com/split) 
+- [Remove Split CC3.0 license](https://onepagelove.com/split) 
 
 ## Support
 - Email me bugs or any requests on [rob@onepagelove.com](mailto:rob@onepagelove.com) and I'll try point you in the right direction :)
