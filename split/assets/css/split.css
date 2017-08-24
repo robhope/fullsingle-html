@@ -5,6 +5,7 @@ Author URI: https://onepagelove.com
 Template URI: https://onepagelove.com/split
 Description: Split is a centrally-divided layout for a professional online presense with a big image image left with alongside content.
 */
+/* -- CSS Reset -- */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 @import url("https://fonts.googleapis.com/css?family=Lora");
 html, body, div, span, applet, object, iframe,
@@ -78,12 +79,19 @@ a,
 a:hover {
   color: #000000; }
 
+a,
+a:hover {
+  text-decoration: none;
+  border: none;
+  border-style: none;
+  box-shadow: none; }
+
+/* -- Content -- */
 @-webkit-keyframes fadein {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -103,42 +111,56 @@ body.page-template-page-fullsingle-split {
   color: #848d96;
   -webkit-animation: fadein 2s;
           animation: fadein 2s; }
-  body.page-template-page-fullsingle-split .panel-grid {
-    margin-bottom: 0 !important; }
   body.page-template-page-fullsingle-split p {
     color: #848d96; }
-  body.page-template-page-fullsingle-split ul li {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0; }
-  body.page-template-page-fullsingle-split .panel-row-style {
-    padding: 0;
-    margin: 0; }
-  body.page-template-page-fullsingle-split .fs-split .split-image {
+
+.fs-split {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (max-width: 800px) {
+    .fs-split {
+      height: auto; } }
+  .fs-split .split-image {
+    width: 50%;
     height: 100vh;
-    background-image: url(https://s3.amazonaws.com/fullsingle/split-bg.jpg);
+    background-image: url("../../images/background.jpg");
     background-position: center center;
     background-size: cover; }
     @media (max-width: 800px) {
-      body.page-template-page-fullsingle-split .fs-split .split-image {
-        height: 80vh; } }
-  body.page-template-page-fullsingle-split .fs-split .split-content {
+      .fs-split .split-image {
+        height: 80vh;
+        width: 100%; } }
+  .fs-split .split-content {
+    width: 50%;
     height: 100vh; }
-    body.page-template-page-fullsingle-split .fs-split .split-content .split-intro {
+    @media (max-width: 800px) {
+      .fs-split .split-content {
+        width: 100%;
+        height: auto; } }
+    .fs-split .split-content .split-intro {
       padding: 80px 80px 0 80px;
       font-weight: 600;
       font-size: 64px;
       line-height: 80px;
       letter-spacing: -2px; }
       @media (max-width: 1200px) {
-        body.page-template-page-fullsingle-split .fs-split .split-content .split-intro {
+        .fs-split .split-content .split-intro {
           padding: 60px 60px 0 60px; } }
       @media (max-width: 800px) {
-        body.page-template-page-fullsingle-split .fs-split .split-content .split-intro {
+        .fs-split .split-content .split-intro {
           padding: 40px 40px 0 40px; } }
-      body.page-template-page-fullsingle-split .fs-split .split-content .split-intro p {
-        color: #CCC; }
-      body.page-template-page-fullsingle-split .fs-split .split-content .split-intro h3 {
+      .fs-split .split-content .split-intro p {
+        color: #CCCCCC; }
+      .fs-split .split-content .split-intro h1 {
         font-weight: 400;
         text-transform: uppercase;
         font-size: 16px;
@@ -146,51 +168,70 @@ body.page-template-page-fullsingle-split {
         margin-bottom: 40px;
         letter-spacing: 0.4px;
         color: #47bec7; }
-    body.page-template-page-fullsingle-split .fs-split .split-content .split-bio {
+    .fs-split .split-content .split-bio {
       padding: 40px 80px 0 80px;
       font-family: 'Lora', serif; }
       @media (max-width: 1200px) {
-        body.page-template-page-fullsingle-split .fs-split .split-content .split-bio {
+        .fs-split .split-content .split-bio {
           padding: 40px 60px 0 60px; } }
       @media (max-width: 800px) {
-        body.page-template-page-fullsingle-split .fs-split .split-content .split-bio {
+        .fs-split .split-content .split-bio {
           padding: 40px 40px 0 40px; } }
-      body.page-template-page-fullsingle-split .fs-split .split-content .split-bio p {
+      .fs-split .split-content .split-bio p {
         color: #848d96; }
-      body.page-template-page-fullsingle-split .fs-split .split-content .split-bio a {
+      .fs-split .split-content .split-bio a {
         color: #848d96;
         transition-duration: 0.5s;
         border-bottom: 1px dotted #848d96; }
-        body.page-template-page-fullsingle-split .fs-split .split-content .split-bio a:hover {
+        .fs-split .split-content .split-bio a:hover {
           color: #CA486d;
           transition-duration: 0.1s;
           border-bottom: 1px dotted #CA486d; }
-    body.page-template-page-fullsingle-split .fs-split .split-content .split-lists {
+    .fs-split .split-content .split-lists {
       padding: 60px 80px 40px 80px; }
       @media (max-width: 1200px) {
-        body.page-template-page-fullsingle-split .fs-split .split-content .split-lists {
+        .fs-split .split-content .split-lists {
           padding: 40px 60px 40px 60px; } }
       @media (max-width: 800px) {
-        body.page-template-page-fullsingle-split .fs-split .split-content .split-lists {
+        .fs-split .split-content .split-lists {
           padding: 40px 40px 20px 40px; } }
-      body.page-template-page-fullsingle-split .fs-split .split-content .split-lists h3 {
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 11px;
-        line-height: 11px;
-        margin-bottom: 31px;
-        color: #848d96;
-        letter-spacing: 2px;
-        opacity: 0.5; }
-      body.page-template-page-fullsingle-split .fs-split .split-content .split-lists ul {
-        margin-right: 10px; }
-        body.page-template-page-fullsingle-split .fs-split .split-content .split-lists ul li {
+      .fs-split .split-content .split-lists .split-list {
+        width: 30%;
+        display: inline-block;
+        margin-bottom: 40px; }
+        @media (max-width: 500px) {
+          .fs-split .split-content .split-lists .split-list {
+            width: 90%; } }
+        .fs-split .split-content .split-lists .split-list h3 {
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 11px;
+          line-height: 11px;
+          margin-bottom: 31px;
+          color: #848d96;
+          letter-spacing: 2px;
+          opacity: 0.5; }
+        .fs-split .split-content .split-lists .split-list ul li {
           font-size: 16px;
           line-height: 16px;
           margin-bottom: 12px; }
-          body.page-template-page-fullsingle-split .fs-split .split-content .split-lists ul li a {
+          .fs-split .split-content .split-lists .split-list ul li a {
             color: #848d96;
             transition-duration: 0.5s; }
-            body.page-template-page-fullsingle-split .fs-split .split-content .split-lists ul li a:hover {
+            .fs-split .split-content .split-lists .split-list ul li a:hover {
               color: #CA486d;
               transition-duration: 0.1s; }
+    .fs-split .split-content .split-credit {
+      opacity: 0.4;
+      padding: 0 80px 40px 80px; }
+      @media (max-width: 1200px) {
+        .fs-split .split-content .split-credit {
+          padding: 0 60px 40px 60px; } }
+      @media (max-width: 800px) {
+        .fs-split .split-content .split-credit {
+          padding: 0 40px 20px 40px; } }
+      .fs-split .split-content .split-credit p {
+        font-size: 12px;
+        line-height: 14px; }
+        .fs-split .split-content .split-credit p a {
+          color: #848d96; }

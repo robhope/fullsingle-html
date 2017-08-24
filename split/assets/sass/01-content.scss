@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------
-// Font Import
+// Google Font Import
 //-------------------------------------------------------------------------------
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
@@ -15,11 +15,15 @@ $color-text			: #848d96;
 $color-link			: #848d96;
 $color-link-hover	: #CA486d; 
 $color-maverick		: #47bec7; 
+$color-tagline		: #CCCCCC; 
 
 // Breakpoints
 $bp-smallish 		: 1200px;
 $bp-tablet 			: 800px;
 $bp-mobile 			: 500px;
+
+// Images
+$image-background	: url('../../images/background.jpg');
 
 //-------------------------------------------------------------------------------
 // Fade In
@@ -48,125 +52,154 @@ body.page-template-page-fullsingle-split {
 	animation: fadein 2s;
 
 	//-------------------------------------------------------------------------------
-	// Site Origin Page Builder Global Styles
+	// Global Styles
 	//-------------------------------------------------------------------------------
 
-	.panel-grid {
-		margin-bottom: 0 !important; // reset
-	}
 
 	p {
-		// margin-bottom: 28px;
 		color: $color-text;
-
 	}
 
-	ul {
+}
 
-		li {
-			list-style: none;
-			padding-left: 0;
-			margin-left: 0;
-		}
-	}
+//-------------------------------------------------------------------------------
+// Sections
+//-------------------------------------------------------------------------------
 
-	.panel-row-style {
-		padding: 0;
-		margin: 0;
+.fs-split {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	@media (max-width: $bp-tablet ) {
+		height: auto;
+	}	
+
+	//-------------------------------------------------------------------------------
+	// Column - Big Image
+	//-------------------------------------------------------------------------------
+
+	.split-image {
+		width: 50%;
+		height: 100vh;
+		background-image: $image-background; 
+		background-position:center center;
+		background-size:cover;
+
+		@media (max-width: $bp-tablet ) {
+			height: 80vh;
+			width: 100%;
+		}	
+
 	}
 
 	//-------------------------------------------------------------------------------
-	// Sections
+	// Column - Content 
 	//-------------------------------------------------------------------------------
 
-	.fs-split {
+	.split-content {
+		width: 50%;
+		height: 100vh;
 
-		.split-image {
-			height: 100vh;
-			background-image:url(https://s3.amazonaws.com/fullsingle/split-bg.jpg); // Need to include within layout cells on future Page Builder update
-			background-position:center center;
-			background-size:cover;
+		@media (max-width: $bp-tablet ) {
+			width: 100%;
+			height: auto;
+		}	
 
-			@media (max-width: $bp-tablet ) {
-				height: 80vh;
+		//-------------------------------------------------------------------------------
+		// Intro Text
+		//-------------------------------------------------------------------------------
+
+		.split-intro {
+			padding: 80px 80px 0 80px;
+			font-weight: 600;
+			font-size: 64px; 
+			line-height: 80px;
+			letter-spacing: -2px;
+
+			@media (max-width: $bp-smallish ) {
+				padding: 60px 60px 0 60px;
 			}	
 
+			@media (max-width: $bp-tablet ) {
+				padding: 40px 40px 0 40px;
+			}	
+
+			p {
+				color: $color-tagline;
+			}
+
+			h1 {
+				font-weight: 400;
+				text-transform: uppercase;
+				font-size: 16px; 
+				line-height: 16px;
+				margin-bottom: 40px;
+				letter-spacing: 0.4px;
+				color: $color-maverick;
+			}
+
 		}
 
-		.split-content {
-			height: 100vh;
+		//-------------------------------------------------------------------------------
+		// Biography
+		//-------------------------------------------------------------------------------
 
-			.split-intro {
-				padding: 80px 80px 0 80px;
-				font-weight: 600;
-				font-size: 64px; 
-				line-height: 80px;
-				letter-spacing: -2px;
+		.split-bio {
+			padding: 40px 80px 0 80px;
+			font-family: 'Lora', serif;
 
-				@media (max-width: $bp-smallish ) {
-					padding: 60px 60px 0 60px;
-				}	
-
-				@media (max-width: $bp-tablet ) {
-					padding: 40px 40px 0 40px;
-				}	
-
-				p {
-					color: #CCC;
-				}
-
-				h3 {
-					font-weight: 400;
-					text-transform: uppercase;
-					font-size: 16px; 
-					line-height: 16px;
-					margin-bottom: 40px;
-					letter-spacing: 0.4px;
-					color: $color-maverick;
-				}
-
+			@media (max-width: $bp-smallish ) {
+				padding: 40px 60px 0 60px;
 			}
 
-			.split-bio {
-				padding: 40px 80px 0 80px;
-				font-family: 'Lora', serif;
+			@media (max-width: $bp-tablet ) {
+				padding: 40px 40px 0 40px;
+			}	
 
-				@media (max-width: $bp-smallish ) {
-					padding: 40px 60px 0 60px;
-				}
-
-				@media (max-width: $bp-tablet ) {
-					padding: 40px 40px 0 40px;
-				}	
-
-				p {
-					color: $color-text;
-				}
-	
-				a {
-					color: $color-link;
-					transition-duration: 0.5s;
-					border-bottom: 1px dotted $color-link;
-
-					&:hover {
-						color: $color-link-hover;
-						transition-duration: 0.1s;
-						border-bottom: 1px dotted $color-link-hover;
-					}
-
-				}			
-
+			p {
+				color: $color-text;
 			}
 
-			.split-lists {
-				padding: 60px 80px 40px 80px;
+			a {
+				color: $color-link;
+				transition-duration: 0.5s;
+				border-bottom: 1px dotted $color-link;
 
-				@media (max-width: $bp-smallish ) {
-					padding: 40px 60px 40px 60px;
+				&:hover {
+					color: $color-link-hover;
+					transition-duration: 0.1s;
+					border-bottom: 1px dotted $color-link-hover;
 				}
 
-				@media (max-width: $bp-tablet ) {
-					padding: 40px 40px 20px 40px;
+			}			
+
+		}
+
+		//-------------------------------------------------------------------------------
+		// Lists
+		//-------------------------------------------------------------------------------
+
+		.split-lists {
+			padding: 60px 80px 40px 80px;
+
+			@media (max-width: $bp-smallish ) {
+				padding: 40px 60px 40px 60px;
+			}
+
+			@media (max-width: $bp-tablet ) {
+				padding: 40px 40px 20px 40px;
+			}	
+
+			.split-list {
+				width: 30%;
+				display: inline-block;
+				margin-bottom: 40px;
+
+				@media (max-width: $bp-mobile ) {
+					width: 90%;
 				}	
 
 				h3 {
@@ -181,7 +214,7 @@ body.page-template-page-fullsingle-split {
 				}
 
 				ul {
-					margin-right: 10px;
+					
 
 					li {
 						font-size: 16px;
@@ -203,10 +236,42 @@ body.page-template-page-fullsingle-split {
 
 				}
 
+			}	
+
+		}
+
+		//-------------------------------------------------------------------------------
+		// Credit
+		//-------------------------------------------------------------------------------
+
+		//	To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split 
+		//	this really helps contribute towards us developing more templates and means the world to me!
+		//	Cheers, Rob (@robhope)
+
+		.split-credit {
+			opacity: 0.4;
+			padding: 0 80px 40px 80px;
+
+			@media (max-width: $bp-smallish ) {
+				padding: 0 60px 40px 60px;
+			}
+
+			@media (max-width: $bp-tablet ) {
+				padding: 0 40px 20px 40px;
+			}	
+
+			p {
+				font-size: 12px; 
+				line-height: 14px;
+
+				a { 
+					color: $color-text;
+				}
+
 			}
 
 		}
-  
+
 	}
 
 }
