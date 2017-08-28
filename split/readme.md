@@ -28,6 +28,7 @@ This HTML template holds a [CC3.0 License](https://creativecommons.org/licenses/
 ## Credits
 - [Girl Image](https://unsplash.com/photos/pAs4IM6OGWI) by Joe Gardner
 - [Clouds Over Mountain Video](http://www.wedistill.io/videos/clouds-over-the-mountain-hd-stock-video) by John Guinn
+- Video integration CSS ninja skills by my bud [Manu](https://twitter.com/manuelmoreale)
 
 ## Support
 - Email me bugs or any requests on [rob@onepagelove.com](mailto:rob@onepagelove.com) and I'll try point you in the right direction :)
