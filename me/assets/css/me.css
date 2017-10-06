@@ -3,7 +3,7 @@ Template Name: Me
 Author: One Page Love
 Author URI: https://onepagelove.com
 Template URI: https://onepagelove.com/me
-Description: Me is a slick, personal layout for any individual wanting a minimal online presence. Features include a big background image or video, logo, bio and icons.
+Description: Me is a slick, personal layout for any individual wanting a minimal online presence. Features include a big background image, logo, bio and icons.
 */
 /* -- CSS Reset -- */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
@@ -205,6 +205,8 @@ body.page-template-page-fullsingle-me {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: fadein 6s;
+          animation: fadein 6s;
   margin-top: auto; }
   .network ul {
     -webkit-animation: fadein 6s;
@@ -237,15 +239,17 @@ body.page-template-page-fullsingle-me {
       .network ul li a:hover .svg-icon rect {
         fill: #FFFFFF;
         transition: 0.1s; }
-  .network p.credit {
-    opacity: 0.4;
+
+.credit {
+  margin-bottom: 0;
+  -webkit-animation: fadein 8s;
+          animation: fadein 8s; }
+  .credit p {
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
-    margin-bottom: 0;
-    -webkit-animation: fadein 8s;
-            animation: fadein 8s; }
-    .network p.credit a {
+    opacity: 0.4; }
+    .credit p a {
       color: #999999; }
 
 body.page-template-page-fullsingle-me.me-video {
