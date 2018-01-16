@@ -8,24 +8,24 @@ This HTML template holds a [CCA 3.0 License](https://creativecommons.org/license
 
 ## Useful links
 - [Me HTML Download](https://onepagetemplates.com/download/me-html)
-- [Me HTML Demo](https://demo.onepagetemplates.com/html/me/)
-- [Me HTML YouTube Video Demo](https://demo.onepagetemplates.com/html/me/index-youtube.html)
-- [Me HTML Self-Hosted Video Demo](https://demo.onepagetemplates.com/html/me/index-video-hosted.html)
+- [Me HTML Demo](https://demos.onepagetemplates.com/html/me/)
+- [Me HTML YouTube Video Demo](https://demos.onepagelove.com/html/me/index-youtube.html)
+- [Me HTML Self-Hosted Video Demo](https://demos.onepagelove.com/html/me/index-video-hosted.html)
 - [Remove Me CCA 3.0 license](https://onepagelove.com/me) 
 - [Me WordPress Theme](https://onepagelove.com/fullsingle-me)
 - [Me as a WordPress Plugin](https://onepagelove.com/go/fullsingle) - works with any WordPress theme
 
 ## Documentation
 
-### Image Only ([demo](https://demo.onepagetemplates.com/html/me/))
+### Image Only ([demo](https://demos.onepagelove.com/html/me/))
 - Replace the `background.jpg` image (with the same filename) in the `images` folder. If you want to use a PNG, simply edit the CSS in stylesheet
 
-### YouTube Video ([demo](https://demo.onepagetemplates.com/html/me/index-youtube.html))
+### YouTube Video ([demo](https://demos.onepagelove.com/html/me/index-youtube.html))
 - Change the YouTube video ID with your YouTube video ID eg. `dk9uNWPP7EA`
 - Make sure you keep the `/embed` URL and don't paste in a normal YouTube URL
 - Tip: Also add your video ID to the `playlist` variable right at the end of the long YouTube string URL to ensure it loops
 
-### Self-Hosted Video ([demo](https://demo.onepagetemplates.com/html/me/index-video-hosted.html))
+### Self-Hosted Video ([demo](https://demos.onepagelove.com/html/me/index-video-hosted.html))
 - Replace the `background.mp4` video (with the same filename) in the `videos` folder. If you want to use a different filename, simply edit the code within the index-video-hosted.html file
 
 ## Credits

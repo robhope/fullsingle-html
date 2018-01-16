@@ -8,24 +8,24 @@ This HTML template holds a [CCA 3.0 License](https://creativecommons.org/license
 
 ## Useful links
 - [Split HTML Download](https://onepagetemplates.com/download/split-html)
-- [Split HTML Demo](https://demo.onepagetemplates.com/html/split/)
-- [Split HTML YouTube Video Demo](https://demo.onepagetemplates.com/html/split/index-youtube.html)
-- [Split HTML Self-Hosted Video Demo](https://demo.onepagetemplates.com/html/split/index-video-hosted.html)
+- [Split HTML Demo](https://demos.onepagelove.com/html/split/)
+- [Split HTML YouTube Video Demo](https://demos.onepagelove.com/html/split/index-youtube.html)
+- [Split HTML Self-Hosted Video Demo](https://demos.onepagelove.com/html/split/index-video-hosted.html)
 - [Remove Split CCA 3.0 license](https://onepagelove.com/split) 
 - [Split WordPress Theme](https://onepagelove.com/fullsingle-split)
 - [Split as a WordPress Plugin](https://onepagelove.com/go/fullsingle) - works with any WordPress theme
 
 ## Documentation
 
-### Image Only ([demo](https://demo.onepagetemplates.com/html/split/))
+### Image Only ([demo](https://demos.onepagelove.com/html/split/))
 - Replace the `background.jpg` image (with the same filename) in the `images` folder. If you want to use a PNG, simply edit the CSS in stylesheet
 
-### YouTube Video ([demo](https://demo.onepagetemplates.com/html/split/index-youtube.html))
+### YouTube Video ([demo](https://demos.onepagelove.com/html/split/index-youtube.html))
 - Change the YouTube video ID with your YouTube video ID eg. `dk9uNWPP7EA`
 - Make sure you keep the `/embed` URL and don't paste in a normal YouTube URL
 - Tip: Also add your video ID to the `playlist` variable right at the end of the long YouTube string URL to ensure it loops
 
-### Self-Hosted Video ([demo](https://demo.onepagetemplates.com/html/split/index-video-hosted.html))
+### Self-Hosted Video ([demo](https://demos.onepagelove.com/html/split/index-video-hosted.html))
 - Replace the `background.mp4` video (with the same filename) in the `videos` folder. If you want to use a different filename, simply edit the code within the index-video-hosted.html file
 
 ## Credits
