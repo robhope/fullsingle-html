@@ -4,6 +4,7 @@ Author: One Page Love
 Author URI: https://onepagelove.com
 Template URI: https://onepagelove.com/split
 Description: Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content.
+Version: 0.2.1
 */
 /* -- CSS Reset -- */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
@@ -118,13 +119,13 @@ body.page-template-page-fullsingle-split {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex; }
   @media (max-width: 800px) {
     .fs-split {
       height: auto;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+      -webkit-flex-wrap: wrap;
+              flex-wrap: wrap; } }
   .fs-split .split-image {
     width: 50%;
     height: 100vh;
@@ -139,13 +140,13 @@ body.page-template-page-fullsingle-split {
     width: 50%;
     min-height: 100vh;
     display: -webkit-box;
-    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
+    -webkit-align-items: center;
             align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
+    -webkit-justify-content: center;
             justify-content: center;
     overflow: auto; }
     @media (max-width: 800px) {
@@ -193,11 +194,13 @@ body.page-template-page-fullsingle-split {
     color: #848d96; }
   .split-bio a {
     color: #848d96;
-    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
     border-bottom: 1px dotted #848d96; }
     .split-bio a:hover {
       color: #CA486d;
-      transition-duration: 0.1s;
+      -webkit-transition-duration: 0.1s;
+              transition-duration: 0.1s;
       border-bottom: 1px dotted #CA486d; }
 
 .split-lists .split-list {
@@ -222,10 +225,12 @@ body.page-template-page-fullsingle-split {
     margin-bottom: 12px; }
     .split-lists .split-list ul li a {
       color: #848d96;
-      transition-duration: 0.5s; }
+      -webkit-transition-duration: 0.5s;
+              transition-duration: 0.5s; }
       .split-lists .split-list ul li a:hover {
         color: #CA486d;
-        transition-duration: 0.1s; }
+        -webkit-transition-duration: 0.1s;
+                transition-duration: 0.1s; }
 
 .split-credit {
   opacity: 0.4; }
